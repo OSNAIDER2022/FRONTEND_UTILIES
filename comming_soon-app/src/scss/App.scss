@@ -1,0 +1,57 @@
+$color_color_primary:rgb(217, 225, 53);
+$color_color_secondary:rgba(50, 50, 54,.7);
+$color_color_tertiary:rgb(149, 149, 160);
+
+.App {
+  text-align: center;
+  background-color: #7e8085;
+  min-height: 100vh;
+//  display: flex;
+//  flex-direction: column;
+  align-items: center;
+ // justify-content: center;
+  font-size: calc(7px + 2vmin);
+  color: white;
+// }
+// .container{
+  display:grid;
+  grid-template-columns: (3, 1fr);
+  grid-auto-rows: (100hv,auto);
+  grid-gap: 1hv;
+
+}
+.header{
+  grid-column: 1/3;
+  grid-row: 1;
+  min-height: 100hv;
+  position: relative;
+  background-color: $color_color_secondary;
+}
+.context{
+  background-color: $color_color_secondary;
+  
+  grid-column: 1/3;
+  grid-row: 2/7;
+  min-height: 100hv;
+  position: relative;
+  
+  }
+
+.footer{
+  grid-column: 1/3;
+  grid-row: 8;
+  min-height: 100hv;
+  position: relative;
+  background-color: $color_color_secondary;
+}
+
+video{
+  grid-column: 1/3;
+  grid-row: 2/7;  
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
